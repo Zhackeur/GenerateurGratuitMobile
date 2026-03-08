@@ -1,0 +1,57 @@
+<!-- filename: index.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur Gratuit de Cartes Cadeaux & Robux</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Générateur Ultime de Cartes Cadeaux & Robux</h1>
+        <p class="description">Obtenez vos cartes cadeaux Play Store ou vos Robux gratuitement en quelques étapes simples !</p>
+
+        <div class="generator-form">
+            <div class="form-group">
+                <label for="username">Nom d'utilisateur / ID :</label>
+                <input type="text" id="username" placeholder="Entrez votre nom d'utilisateur ou ID" required>
+            </div>
+
+            <div class="form-group">
+                <label for="platform">Plateforme :</label>
+                <select id="platform">
+                    <option value="playstore">Carte Cadeau Google Play Store</option>
+                    <option value="roblox">Robux (Roblox)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="amount">Montant :</label>
+                <select id="amount">
+                    <!-- Options will be dynamically loaded by JavaScript -->
+                    <option value="10">10€</option>
+                    <option value="25">25€</option>
+                    <option value="50">50€</option>
+                    <option value="100">100€</option>
+                </select>
+            </div>
+
+            <button id="generateButton">Générer Maintenant</button>
+        </div>
+
+        <div class="console">
+            <h2>Statut du Générateur :</h2>
+            <div id="statusOutput">
+                <p>Prêt à générer...</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2023 Générateur Ultime. Tous droits réservés.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
